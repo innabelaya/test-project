@@ -1,0 +1,9 @@
+block('page').elem('body').match(!this.ctx.mode)(
+    content()(function() {
+        this.ctx.mode = true;
+        return {
+            elem: 'inner',
+            content: applyNext()
+        };
+    })
+)
