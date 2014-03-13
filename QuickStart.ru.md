@@ -182,25 +182,24 @@ BEMJSON-декларация представляет собой структу�
 
 Картинку для логотипа можно взять [отсюда](http://varya.me/online-shop-dummy/desktop.blocks/b-logo/b-logo.png) или указать свою.
 
-```
-{
-    elem: 'right',
-    content: {
-        block: 'logo',
-        content: [
-            {
-                block: 'icon',
-                tag: 'img',
-                attrs: { src: 'http://varya.me/online-shop-dummy/desktop.blocks/b-logo/b-logo.png' }
-            },
-            {
-                elem: 'slogan',
-                content: 'A new way of thinking'
-            }
-        ]
+
+    {
+        elem: 'right',
+        content: {
+            block: 'logo',
+            content: [
+                {
+                    block: 'icon',
+                    tag: 'img',
+                    attrs: { src: 'http://varya.me/online-shop-dummy/desktop.blocks/b-logo/b-logo.png' }
+                },
+                {
+                    elem: 'slogan',
+                    content: 'A new way of thinking'
+                }
+            ]
+        }
     }
-}
-```
 [Пример кода](https://gist.github.com/innabelaya/9345355) index.bemjson.js. 
 
 ![Блок logo](https://jing.yandex-team.ru/storage/neige/567104/2014-02-25_1137.png)
@@ -376,7 +375,7 @@ BEMHTML-шаблоны могут не просто определять тег�
                 price: '73',
                 url: '/'
             },
-            ...
+            //...
     }
 [Пример кода](https://gist.github.com/innabelaya/8913801) index.bemjson.js.
 
@@ -492,12 +491,12 @@ CSS-правила для блока можно скопировать [отсю
 Чтобы получить код библиотеки, нужно указать ее имя в файле `.bem/make.js`.
 
 ```
-    libraries: [
-            'bem-core @ v2.0.0',
-            'bem-components @ 79ca4740c605339941e2a560c6681bfea02f00b3',
-            'j'
-        ]
-```
+libraries: [
+        'bem-core @ v2.0.0',
+        'bem-components @ 79ca4740c605339941e2a560c6681bfea02f00b3',
+        'j'
+    ]
+```    
 [Пример кода](https://gist.github.com/innabelaya/8915341) .bem/make.js.
 
 Адрес библиотеки прописываем в `.bem/repo.db.js` файле:
@@ -571,11 +570,11 @@ CSS-правила для блока можно скопировать [отсю
     $ bem create -l desktop.blocks -b head -T deps.js 
 
 ```
-    ({
-        shouldDeps: [
-            { block: 'box' }
-        ]
-    })
+({
+    shouldDeps: [
+        { block: 'box' }
+    ]
+})
 ```
 [Пример кода](https://gist.github.com/innabelaya/8930709) head.deps.js.
 
@@ -591,6 +590,7 @@ CSS-правила для блока можно скопировать [отсю
         mix: [{ block: 'box' }],
         content: ...
 ```
+        
 [Пример кода](https://gist.github.com/innabelaya/8930835) goods.bemhtml.
 
     <!DOCTYPE html>
