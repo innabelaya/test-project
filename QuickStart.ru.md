@@ -4,7 +4,7 @@
 
 Мы шаг за шагом создадим [страничку каталога товаров](http://varya.me/online-shop-dummy/desktop.bundles/index/index.html), пользуясь принципами БЭМ в CSS, возможностью писать декларативный JavaScript с использованием фреймворка [i-bem.js](http://ru.bem.info/articles/bem-js-main-terms/) и шаблонизатора [BEMHTML](http://ru.bem.info/libs/bem-core/1.1.0/rationale/). Помогать делать это будут инструменты для работы с файлами по БЭМ-методолгии – [bem-tools](http://ru.bem.info/tools/bem/bem-tools/). 
 
-<img height="407" width="624" src="https://github.com/innabelaya/test-project/blob/master/png/2014-02-25_1011.png"> 
+<img height="407" width="624" src="png/2014-02-25_1011.png"> 
 
 Инструменты, которые мы собираемся использовать, являются кроссплатформенными.  
 
