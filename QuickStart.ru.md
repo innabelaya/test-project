@@ -4,7 +4,7 @@
 
 Мы шаг за шагом создадим [страничку каталога товаров](http://varya.me/online-shop-dummy/desktop.bundles/index/index.html), пользуясь принципами БЭМ в CSS, возможностью писать декларативный JavaScript с использованием фреймворка [i-bem.js](http://ru.bem.info/articles/bem-js-main-terms/) и шаблонизатора [BEMHTML](http://ru.bem.info/libs/bem-core/1.1.0/rationale/). Помогать делать это будут инструменты для работы с файлами по БЭМ-методолгии – [bem-tools](http://ru.bem.info/tools/bem/bem-tools/). 
 
-<img height="407" width="624" src="https://jing.yandex-team.ru/storage/neige/920060/2014-02-25_1011.png"> 
+<img height="407" width="624" src="https://github.com/innabelaya/test-project/blob/master/png/2014-02-25_1011.png"> 
 
 Инструменты, которые мы собираемся использовать, являются кроссплатформенными.  
 
@@ -59,7 +59,7 @@
 
 info: Server is listening on port 8080. Point your browser to http://localhost:8080/
 
-На вашем компьютере запустился [bem server](https://github.com/bem/project-stub#usage) — инструмент для разработки, который при обновлении страницы в браузере будет автоматичекси пересобирать только ту часть проекта, которую затронули ваши изменения.
+На вашем компьютере запустился [bem server](https://github.com/bem/project-stub#usage) — инструмент для разработки, который при обновлении страницы в браузере будет автоматически пересобирать только ту часть проекта, которую затронули ваши изменения.
 
 **Проблема?**  
 Если порт 8080 уже используется другой программой, его можно переназначить с помощью опции `-p`:
@@ -707,4 +707,4 @@ libraries: [
 * использование библиотеки bem-core v2.0.0;
 * использование bem-tools v0.7.x;
 * обновление библиотеки bem-components;
-* переход на новый js-синтаксис.
+* переход на новый js-синтаксис шаблонизатоа BEMHTML.
