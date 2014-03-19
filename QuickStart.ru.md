@@ -329,7 +329,7 @@ BEMHTML-шаблоны могут не просто определять тег�
         })
     )
 
-[Пример кода ](https://gist.github.com/innabelaya/8906664)  page.bemhtml.
+[Пример кода](https://gist.github.com/innabelaya/8906664)  page.bemhtml.
 
     <!DOCTYPE html>
     <html class="ua_js_yes">
@@ -627,7 +627,7 @@ libraries: [
     mix: [{ block: 'box', js: true }]
 [Пример кода](https://gist.github.com/innabelaya/8930981) index.bemjson.js.
 
-Также разместим внутри блока элемент switcher:
+Также разместим внутри блока элемент `switcher`:
 
     block: 'head',
     mix: [ { block: 'box', js: true } ],
