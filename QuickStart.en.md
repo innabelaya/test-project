@@ -3,7 +3,7 @@ Within this tutorial we are going to develop an [online shop web page](http://va
 
 **Note:** this tutorial requires knowledge of JavaScript programming language.
 
-<img height="407" width="624" src="https://jing.yandex-team.ru/storage/neige/920060/2014-02-25_1011.png"> 
+<img height="407" width="624" src="png/2014-02-25_1011.png"> 
 
 All tools we are going to use are crossplatformed.
 
@@ -206,7 +206,7 @@ You can use our [cute BEM image](http://varya.me/online-shop-dummy/desktop.block
     }
 [Code sample](https://gist.github.com/innabelaya/9345355) index.bemjson.js. 
 
-![Блок logo](https://jing.yandex-team.ru/storage/neige/567104/2014-02-25_1137.png)
+![Блок logo](png/2014-02-25_1137.png)
 
 ##Using Blocks of a Library  
 You do not need to implement an **input** and a **button** blocks yourself; they are provided by the [bem-components library](https://github.com/bem/bem-components), that is linked to the project-stub by default. So, you can just declare these blocks in a `desktop.bundles/index/index.bemjson.js` file.
@@ -254,7 +254,7 @@ Let's add Yandex browser search results to the search form.
 ``` 
 [Code sample](https://gist.github.com/innabelaya/9391751) index.bemjson.js.
 
-![Форма поиска](https://jing.yandex-team.ru/storage/neige/666549/2014-02-25_1140.png)
+![Форма поиска](png/2014-02-25_1140.png)
 
 Use a **link** block from the same library to render an **icon** block as a link to [bem.info](http://en.bem.info/) site. 
 
@@ -305,7 +305,7 @@ The same can be done for a **link** block:
     $ bem create -l desktop.blocks -b link -T css 
 [Code sample](https://gist.github.com/innabelaya/8906451) link.css.
 
-![Форма поиска](https://jing.yandex-team.ru/storage/neige/673342/2014-02-25_1145.png)
+![Форма поиска](png/2014-02-25_1145.png)
 
 ###Modifying BEMHTML
 
@@ -353,7 +353,7 @@ Define a border property for the **head** block to make it visible on a page.
     $ bem create -l desktop.blocks -b head -T css 
 Again, you can borrow contents for a `desktop.blocks/head/head.css` file from [here](https://gist.github.com/innabelaya/8906724).
 
-![Блок head с рамкой](https://jing.yandex-team.ru/storage/neige/844267/2014-02-25_1149.png)
+![Блок head с рамкой](png/2014-02-25_1149.png)
 
 #BEMHTML Templates
 
@@ -462,7 +462,7 @@ You need to identify the new goods on a page. To implement this, add verificatio
 Use this code snapshot for [CSS rules](https://gist.github.com/innabelaya/8915049).  
 Notice that you do not need to create a CSS file for this block because it had already been generated using `bem create` command; CSS is one of the block's default technologies.
 
-![Список товаров](https://jing.yandex-team.ru/storage/neige/699690/2014-02-25_1203.png) 
+![Список товаров](png/2014-02-25_1203.png) 
 
 You also need some extra CSS for an IE browser, since it is not among the list of default block technologies.
 
@@ -578,7 +578,7 @@ Do not forget to define that a **head** block requires a **box** block.
 ```
 [Code sample](https://gist.github.com/innabelaya/8930709) head.deps.js.
 
-<img height="157" width="624" src="https://jing.yandex-team.ru/storage/neige/424422/2014-02-25_1216.png">
+<img height="157" width="624" src="png/2014-02-25_1216.png">
 
 You can also mix an element with a block using BEMHTML templates of a block.  
 Let's specify that each item element from a **goods** block has the same formatting as a **head** block. For this you need to mix each **item** from the **goods** block with the **box** block from a `j` library.
@@ -613,7 +613,7 @@ Let's specify that each item element from a **goods** block has the same formatt
         </body>
     </html>
 
-![Список товаров в блоке box](https://jing.yandex-team.ru/storage/neige/976769/2014-02-25_1221.png)
+![Список товаров в блоке box](png/2014-02-25_1221.png)
 
 #Declarative JavaScript
 
@@ -646,7 +646,7 @@ It is required to have a `switcher` element in the block.
 
 With that you have a block with a clickable arrow-shaped element which rolls the block up.
 
-![Стрелочка](http://jing.yandex-team.ru/files/neige/2014-02-25_1227.png)
+![Стрелочка](png/2014-02-25_1227.png)
 
 ##Modifying JavaScript
 
@@ -686,12 +686,6 @@ BEM server builds it for us upon the first access.
 
 #Starting the Project Build Procedure
 
-Все время, пока мы разрабатывали проект, работал `bem server` и пересобирал только измененные части проекта, которые необходимы при обновлении страницы в браузере.
-
-Для сборки всего проекта целиком, можно воспользоваться одной командой:
-
-    $ bem make
-    
 When developing, every time you reload a page in a browser, a `bem server` rebuilds what has to be rebuilt following your changes.
 
 To rebuild the entire project you can use a `bem make` command:
