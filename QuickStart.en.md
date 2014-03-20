@@ -1,4 +1,4 @@
-# Full Stack Quick Start
+# Full stack quick start
 
 Within this tutorial we are going to develop an [online shop web page](http://varya.me/online-shop-dummy/desktop.bundles/index/index.html) using BEM principles in CSS-writing, JavaScript and [BEMHTML](http://bem.info/libs/bem-core/2.0.0/bemhtml/rationale/). While developing we will use command-line application: [bem-tools](http://en.bem.info/tools/bem/bem-tools/). 
 
@@ -14,13 +14,13 @@ Be aware that you use suitable versions of bem-tools and libraries to run throug
 
 To get started with BEM-based project you need to install the latest version of [Node.js](http://nodejs.org/).
 
-# BEM In Short
+# BEM in short
 
 BEM is an abbreviation of three entities: a **Block**, an **Element** and a **Modifier**. 
  
 BEM is a [methodology](http://en.bem.info/method/) of web projects development, that allows you to divide an interface into logically independent blocks. At the same time BEM contains specific tools for the typical web developers' tasks automatization. And finally BEM gives us opportunity to create libraries of web-components for fast and efficient web-development.
 
-# Starting with a New Project Repository
+# Starting with a new project repository
 
 The quickest and easiest way to start with your own BEM project is to use an existing template project repository – [project-stub](https://github.com/bem/project-stub). It contains the minimal configuration files and folders you will need for quick start from scratch.  
 
@@ -69,7 +69,7 @@ If port:8080 is already in use by another program, you can redefine it using `-p
 
 		$ bem server -p portNum
 
-# Brief Overview of the Project Structure 
+# Brief overview of the project structure 
 
 HTML layout and CSS rules of each page depend on its BEMJSON description in a `pageName.bemjson.js` file called **BEMJSON declaration**. All blocks declared in a BEMJSON file are automatically stored in a `desktop.bundles` directory by bem-tools. Every page has its own directory and inside it you can find different files needed for a page to function.   
 
@@ -83,7 +83,7 @@ Blocks' implementation sets are stored in one directory called **redefinition le
 
 [Project structure](http://en.bem.info/method/filesystem/) presumes that all newly created and redefined blocks are stored in a `desktop.blocks` directory. The web pages' blocks and all blocks that are mentioned in BEMJSON declarations are stored in a `desktop.bundles` directory.  
 
-# Step-by-Step
+# Step-by-step
 
 This section provides you with a step-by-step diving into BEM-based development of a web page. Previewing the steps of this tutorial will give you a clear insight into the developing process.
 
@@ -103,7 +103,7 @@ First of all the two main parts of our web page will be defined: a *head* and it
 
 7. And finally we will show you how to create a new page and start a whole project build procedure.  
 
-# Changing Pages
+# Changing pages
 
 You have just one page in your project to begin with: `index.html`.  
 Try and open it in your browser: `http://localhost:8080/desktop.bundles/index/index.html`. 
@@ -111,7 +111,7 @@ Try and open it in your browser: `http://localhost:8080/desktop.bundles/index/in
 **Note!**  
 Make sure that you specify the full path to the `index.html` page: `http://localhost:8080/desktop.bundles/index/index.html`, otherwise some problems with relative paths could occur and all CSS rules will be ignored. 
 
-## Declaring a Block in BEMJSON
+## Declaring a block in BEMJSON
 
 Let's add a **head** block to the page. To do this declare it in a BEMJSON file of a `/desktop.bundles/index/index.bemjson.js` page.
 
@@ -172,7 +172,7 @@ Refresh the page to view the new corresponding `<div>`'s:
     
 This markup requires CSS rules to be added. In BEM terms you have to implement a **layout** block in CSS.
 
-## Creating a New Block
+## Creating a new block
 
 To implement a block using CSS technology you have to create a CSS file for this block in a corresponding block directory. For this use `bem create` command of [bem-tools](http://en.bem.info/tools/bem/bem-tools/commands/):
 
@@ -212,7 +212,7 @@ You can use our [cute BEM image](http://varya.me/online-shop-dummy/desktop.block
 
 ![Блок logo](png/2014-02-25_1137.png)
 
-## Using a Block Library  
+## Using a block library  
 
 You do not need to implement an **input** and a **button** blocks yourself. They are provided by the [bem-components library](https://github.com/bem/bem-components) which is linked to the project-stub by default. So you can just declare these blocks in a `desktop.bundles/index/index.bemjson.js` file.
 
@@ -289,9 +289,9 @@ Use a **link** block from the same library to render an **icon** block as a link
 ```
 [Code sample](https://gist.github.com/innabelaya/9345693) index.bemjson.js.
 
-## Modifying the Library Blocks
+## Modifying the library blocks
 
-### Modifying a Block In CSS
+### Modifying a block in CSS
 
 The blocks **input** and **button** can be modified using additional CSS rules.
 
@@ -360,7 +360,7 @@ Once again, you can borrow contents for a `desktop.blocks/head/head.css` file fr
 
 ![Head block with a frame](png/2014-02-25_1149.png)
 
-# BEMHTML Templates
+# BEMHTML templates
 
 A web page we are going to develop contains a list of some goods. To be able to add it to the page you have to declare a **goods** block in a `desktop.bundles/index/index.bemjson.js` file. There are the following goods' data available: title, image, price and link for each item.
 
